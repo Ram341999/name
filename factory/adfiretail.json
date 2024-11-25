@@ -1,0 +1,9 @@
+{
+	"name": "adfiretail",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ecb3180d-c894-405e-b7f4-f8b849f33ee1",
+		"tenantId": "fb71c207-c309-483f-aa20-9a03cf530fcb"
+	}
+}

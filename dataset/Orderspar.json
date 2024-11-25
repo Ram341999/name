@@ -1,0 +1,21 @@
+{
+	"name": "Orderspar",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsiretail",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "retail_db_parquet/orders",
+				"container": "data"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
