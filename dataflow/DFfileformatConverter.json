@@ -1,0 +1,30 @@
+{
+	"name": "DFfileformatConverter",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Orderscsv",
+						"type": "DatasetReference"
+					},
+					"name": "orders"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          Order_id as integer,",
+				"          Order_date as timestamp,",
+				"          Order_customer_id as integer,",
+				"          Order_status as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> orders"
+			]
+		}
+	}
+}
